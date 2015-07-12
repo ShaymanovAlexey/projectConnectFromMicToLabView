@@ -1,0 +1,12 @@
+#ifndef COMPORTLIBRARY_GLOBAL_H
+#define COMPORTLIBRARY_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+#include "comportlibrary.h"
+#if defined(COMPORTLIBRARY_LIBRARY)
+#  define COMPORTLIBRARYSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define COMPORTLIBRARYSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // COMPORTLIBRARY_GLOBAL_H
